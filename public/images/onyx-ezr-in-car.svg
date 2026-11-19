@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e242c"/>
+      <stop offset="60%" stop-color="#12151a"/>
+      <stop offset="100%" stop-color="#0a0c0f"/>
+    </linearGradient>
+    <linearGradient id="ventSlats" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e2229"/>
+      <stop offset="50%" stop-color="#2d333d"/>
+      <stop offset="100%" stop-color="#1e2229"/>
+    </linearGradient>
+    <filter id="carGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Car Dashboard Ambiance -->
+  <rect width="800" height="600" fill="url(#dashBg)"/>
+
+  <!-- Air Condition Vent Grilles Behind Radio -->
+  <g transform="translate(100, 100)" opacity="0.6">
+    <!-- Vent Housing -->
+    <rect x="0" y="0" width="220" height="260" rx="16" fill="#14181e" stroke="#2a303c" stroke-width="3"/>
+    <!-- Louvers -->
+    <rect x="15" y="30" width="190" height="12" rx="4" fill="url(#ventSlats)"/>
+    <rect x="15" y="60" width="190" height="12" rx="4" fill="url(#ventSlats)"/>
+    <rect x="15" y="90" width="190" height="12" rx="4" fill="url(#ventSlats)"/>
+    <rect x="15" y="120" width="190" height="12" rx="4" fill="url(#ventSlats)"/>
+    <rect x="15" y="150" width="190" height="12" rx="4" fill="url(#ventSlats)"/>
+    <rect x="15" y="180" width="190" height="12" rx="4" fill="url(#ventSlats)"/>
+    <rect x="15" y="210" width="190" height="12" rx="4" fill="url(#ventSlats)"/>
+  </g>
+
+  <!-- Center Vehicle Console Display Curve -->
+  <path d="M 400 40 Q 600 80 780 180 L 780 600 L 350 600 Z" fill="#151920" opacity="0.8"/>
+  <ellipse cx="620" cy="460" rx="90" ry="90" fill="#1b2028" stroke="#333b47" stroke-width="4"/>
+  <circle cx="620" cy="460" r="45" fill="#12151b"/>
+
+  <!-- Installed Onyx EZR Radio with Vent Mount Clamp -->
+  <g transform="translate(160, 120)" filter="url(#carGlow)">
+    <!-- Swivel Mount Extension -->
+    <path d="M 80 160 L 160 160 L 170 210 L 70 210 Z" fill="#2d333b"/>
+    <circle cx="120" cy="180" r="14" fill="#47515e"/>
+
+    <!-- Radio Unit angled slightly -->
+    <rect x="80" y="50" width="460" height="300" rx="20" fill="#20242b" stroke="#383f4a" stroke-width="2"/>
+    <rect x="105" y="85" width="310" height="180" rx="8" fill="#03070b" stroke="#171b21" stroke-width="2"/>
+
+    <!-- Radio Screen UI in vehicle -->
+    <text x="125" y="115" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CH 56 • The Highway</text>
+    <text x="125" y="150" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="900">Luke Combs</text>
+    <text x="125" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15" font-weight="500">Fast Car</text>
+    <text x="125" y="235" fill="#008BE2" font-family="system-ui, sans-serif" font-size="11" font-weight="700">LIVE SATELLITE BROADCAST</text>
+
+    <!-- Tuning Dial -->
+    <circle cx="455" cy="155" r="32" fill="#16181d" stroke="#374151" stroke-width="2"/>
+    <circle cx="455" cy="155" r="22" fill="#22262e"/>
+    <text x="455" y="159" fill="#008BE2" font-family="system-ui, sans-serif" font-size="10" font-weight="900" text-anchor="middle">TUNE</text>
+
+    <!-- Buttons -->
+    <rect x="105" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="139" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="173" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="207" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="241" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="275" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="309" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="343" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+    <rect x="377" y="280" width="28" height="28" rx="4" fill="#252a32"/>
+  </g>
+
+  <!-- Tag Overlay -->
+  <g transform="translate(60, 510)">
+    <rect x="0" y="0" width="280" height="44" rx="8" fill="#002b49" opacity="0.95"/>
+    <text x="140" y="27" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Real Vehicle Installation Preview</text>
+  </g>
+</svg>
+

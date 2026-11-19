@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#f8fafc" rx="12"/>
+  <ellipse cx="200" cy="340" rx="110" ry="12" fill="#000000" opacity="0.1" filter="blur(5px)"/>
+
+  <!-- Magnetic Vehicle Antenna Puck -->
+  <g transform="translate(130, 110)">
+    <!-- Antenna Pod -->
+    <ellipse cx="70" cy="70" rx="65" ry="38" fill="#1b1f24" stroke="#333a44" stroke-width="2"/>
+    <ellipse cx="70" cy="62" rx="48" ry="24" fill="#252a32"/>
+    <ellipse cx="70" cy="58" rx="26" ry="12" fill="#0e1115"/>
+    <text x="70" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="8" font-weight="800" text-anchor="middle">SXM</text>
+
+    <!-- Heavy-duty coiled wire -->
+    <path d="M 70 100 Q 120 150 70 180 Q 20 200 90 220 Q 150 240 100 260" fill="none" stroke="#252b33" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- SMB Gold Connector Pin -->
+    <rect x="90" y="255" width="22" height="12" rx="3" fill="#eab308"/>
+    <rect x="110" y="258" width="8" height="6" fill="#ca8a04"/>
+  </g>
+
+  <rect x="120" y="32" width="160" height="26" rx="13" fill="#00629B"/>
+  <text x="200" y="49" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">SMB CONNECTOR</text>
+</svg>
+

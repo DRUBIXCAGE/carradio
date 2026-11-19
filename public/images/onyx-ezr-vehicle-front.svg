@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2e35"/>
+      <stop offset="50%" stop-color="#1b1e23"/>
+      <stop offset="100%" stop-color="#101216"/>
+    </linearGradient>
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a121a"/>
+      <stop offset="100%" stop-color="#04070a"/>
+    </linearGradient>
+    <linearGradient id="dockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#343a40"/>
+      <stop offset="100%" stop-color="#181a1d"/>
+    </linearGradient>
+    <linearGradient id="accentBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00629B"/>
+      <stop offset="100%" stop-color="#008BE2"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="25" flood-color="#001830" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base Shadow -->
+  <ellipse cx="400" cy="540" rx="320" ry="24" fill="#000000" opacity="0.18" filter="blur(10px)"/>
+
+  <!-- Dock Stand -->
+  <g transform="translate(240, 420)">
+    <path d="M 40 40 L 70 120 L 250 120 L 280 40 Z" fill="url(#dockGrad)"/>
+    <rect x="60" y="115" width="200" height="15" rx="5" fill="#121316"/>
+    <text x="160" y="100" fill="#6c757d" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1.5">PowerConnect™</text>
+  </g>
+
+  <!-- Main Radio Receiver Body -->
+  <g filter="url(#dropShadow)">
+    <!-- Outer Bezel -->
+    <rect x="140" y="100" width="520" height="340" rx="28" fill="url(#bodyGrad)" stroke="#3a4049" stroke-width="2"/>
+    <rect x="144" y="104" width="512" height="332" rx="24" fill="none" stroke="#15171b" stroke-width="2"/>
+
+    <!-- SiriusXM Branding Top Left -->
+    <text x="175" y="132" fill="#adb5bd" font-family="system-ui, sans-serif" font-size="13" font-weight="900" letter-spacing="0.5">Sirius<tspan fill="#008BE2">XM</tspan></text>
+    <text x="590" y="132" fill="#6c757d" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">ONYX EZR</text>
+
+    <!-- 3.2" Screen Bezel -->
+    <rect x="170" y="146" width="350" height="200" rx="10" fill="#000000" stroke="#252930" stroke-width="2"/>
+    <rect x="176" y="152" width="338" height="188" rx="6" fill="url(#screenGlass)"/>
+
+    <!-- Screen UI Display (Monochrome High Contrast) -->
+    <!-- Signal Strength & Category Bar -->
+    <g transform="translate(190, 166)">
+      <!-- Signal bars -->
+      <rect x="0" y="8" width="3" height="4" fill="#00A3FF"/>
+      <rect x="5" y="6" width="3" height="6" fill="#00A3FF"/>
+      <rect x="10" y="3" width="3" height="9" fill="#00A3FF"/>
+      <rect x="15" y="0" width="3" height="12" fill="#00A3FF"/>
+      <text x="32" y="11" fill="#8ecae6" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">POP / ROCK</text>
+      <text x="240" y="11" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700">12:45 PM</text>
+    </g>
+
+    <!-- Channel Badge & Number -->
+    <g transform="translate(190, 195)">
+      <rect x="0" y="0" width="46" height="24" rx="4" fill="#00629B"/>
+      <text x="23" y="17" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="900" text-anchor="middle">56</text>
+      <text x="56" y="18" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="800">The Highway</text>
+    </g>
+
+    <!-- Song Artist & Title -->
+    <g transform="translate(190, 245)">
+      <text x="0" y="0" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Luke Combs</text>
+      <text x="0" y="24" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">Fast Car</text>
+      <text x="0" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="500">Gettin' Old (2023)</text>
+    </g>
+
+    <!-- Screen Feature Indicators -->
+    <g transform="translate(190, 320)">
+      <rect x="0" y="0" width="58" height="14" rx="3" fill="#1e293b"/>
+      <text x="29" y="10" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="9" font-weight="700" text-anchor="middle">TuneMix™</text>
+      <text x="75" y="10" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">One-Touch Jump [Ready]</text>
+    </g>
+
+    <!-- Right Control Panel: Rotary Dial & Navigation -->
+    <g transform="translate(545, 175)">
+      <!-- Rotary Knob -->
+      <circle cx="50" cy="50" r="42" fill="#181a1d" stroke="#374151" stroke-width="3"/>
+      <circle cx="50" cy="50" r="32" fill="#23272f" stroke="#1f242d" stroke-width="2"/>
+      <!-- Knurled texture markers -->
+      <line x1="50" y1="12" x2="50" y2="20" stroke="#4b5563" stroke-width="2"/>
+      <line x1="50" y1="80" x2="50" y2="88" stroke="#4b5563" stroke-width="2"/>
+      <line x1="12" y1="50" x2="20" y2="50" stroke="#4b5563" stroke-width="2"/>
+      <line x1="80" y1="50" x2="88" y2="50" stroke="#4b5563" stroke-width="2"/>
+      <text x="50" y="54" fill="#00A3FF" font-family="system-ui, sans-serif" font-size="11" font-weight="900" text-anchor="middle">SELECT</text>
+
+      <!-- Side Function Buttons -->
+      <g transform="translate(-8, 115)">
+        <!-- Jump Button -->
+        <rect x="0" y="0" width="50" height="26" rx="5" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="25" y="17" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">JUMP</text>
+        <!-- Direct Button -->
+        <rect x="62" y="0" width="50" height="26" rx="5" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="87" y="17" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">DIRECT</text>
+      </g>
+    </g>
+
+    <!-- Bottom Row: 10 Preset Buttons (0-9) & Menu Buttons -->
+    <g transform="translate(170, 365)">
+      <!-- Presets 1 to 10 -->
+      <g>
+        <!-- Button 1 -->
+        <rect x="0" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="15" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">1</text>
+        <!-- Button 2 -->
+        <rect x="36" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="51" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">2</text>
+        <!-- Button 3 -->
+        <rect x="72" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="87" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">3</text>
+        <!-- Button 4 -->
+        <rect x="108" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="123" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">4</text>
+        <!-- Button 5 -->
+        <rect x="144" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="159" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">5</text>
+        <!-- Button 6 -->
+        <rect x="180" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="195" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">6</text>
+        <!-- Button 7 -->
+        <rect x="216" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="231" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">7</text>
+        <!-- Button 8 -->
+        <rect x="252" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="267" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">8</text>
+        <!-- Button 9 -->
+        <rect x="288" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="303" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">9</text>
+        <!-- Button 0 -->
+        <rect x="324" y="0" width="30" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="339" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">0</text>
+      </g>
+
+      <!-- Menu & FM Button -->
+      <g transform="translate(370, 0)">
+        <rect x="0" y="0" width="50" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="25" y="22" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">MENU</text>
+        <rect x="56" y="0" width="50" height="34" rx="4" fill="#23272f" stroke="#374151" stroke-width="1.5"/>
+        <text x="81" y="22" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">FM</text>
+      </g>
+    </g>
+  </g>
+</svg>
+
